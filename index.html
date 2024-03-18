@@ -1,10 +1,61 @@
-  
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title> Jee Seung Oh | UI Design Programming 1</title>
+  <title>Jee Seung Oh | UI Design Programming 1</title>
   <meta charset="utf-8" />
+  <style>
+    /* Basic CSS to style the webpage */
+    body {
+      background-color: #fcb1b1; /* Light pink background */
+      font-family: Arial, sans-serif; /* Change the font */
+      color: #333; /* Darker text for better readability */
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* Adjust grid layout if needed */
+      gap: 20px; /* Space between grid items */
+      padding: 20px; /* Padding around the grid */
+    }
+
+    #left-column {
+      background-color: #fddfdf; /* Slightly different pink for contrast */
+      padding: 20px; /* Padding inside the left column */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    h1 {
+      color: #a83333; /* Darker pink for headings */
+    }
+
+    a {
+      color: #d94f70; /* Pink color for links */
+    }
+
+    a:hover {
+      text-decoration: none; /* Remove underline on hover */
+      color: #bf3f5f; /* Darker pink on hover */
+    }
+
+    .desc {
+      font-style: italic; /* Italicize the description */
+    }
+
+    ul {
+      list-style-type: none; /* Remove default list bullets */
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "•"; /* Custom bullet */
+      color: #d94f70; /* Bullet color */
+      display: inline-block; 
+      width: 1em; /* Space before bullet */
+      margin-left: -1em; /* Align bullet outside the text */
+    }
+  </style>
 </head>
 
 <body>
@@ -13,15 +64,12 @@
   <div id="grid">
     <div id="left-column" class="scroll">  
 
-      <!-- my favorite pokemon -->
-      <!-- <img src="https://archives.bulbagarden.net/media/upload/thumb/5/53/054Psyduck.png/140px-054Psyduck.png" alt="Psyduck" /> -->
-
       <!-- about me-->
       <h1>Jee Seung Oh</h1>  
-      <p class="desc">A short paragraph about you...</p>
+      <p class="desc">My name is Jee Seung and I am majoring in CSE and technically also design but I am in the process of designing my own major.</p>
       <ul>
         <li>My favorite food is probably sushi but v inconsistent</li>
-        <li>I am unable to decide on a favorite song </li>
+        <li>I am unable to decide on a favorite song</li>
         <li>My favorite website is <a href="https://www.nytimes.com/crosswords">NYTGames</a></li>
       </ul>
 
