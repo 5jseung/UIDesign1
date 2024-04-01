@@ -4,11 +4,17 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
+/* adjusting fonts
+body {
+    color: red;
+    Font-family: arial;
+}  */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: helvetica;
+	color: white;
 	transition: background 500ms ease;
+
 }
 
 p, li {
