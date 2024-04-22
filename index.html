@@ -8,7 +8,22 @@
 <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
   <style>
-   
+     /* Dark mode specific styles */
+    .dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    }
+    .dark-mode #left-column,
+    .dark-mode #right-column {
+    background-color: #1e1e1e; /* Darker contrast for columns */
+    }
+    .dark-mode a {
+    color: #9adc6d; /* Greenish links for better visibility in dark mode */
+    }
+    .dark-mode a:hover {
+    color: #c6e377; /* Lighter green on hover */
+    }
+
     body {
       background-color: #f2c2e9; 
       /* Light pink background */
@@ -74,14 +89,19 @@
   </style>
 </head>
 
+
 <body>
 
+
   <!-- this is where my code is-->
+  <!-- Button to toggle dark mode -->
+<button id="dark-mode-toggle">Toggle Dark Mode</button>
+
   <div id="grid">
     <div id="left-column" class="scroll">  
 
       <!-- about me-->
-      <h1><span class = "cursive">J</span>ee Seung <span class = "cursive">O</span>h </h1>  
+      <h1>Jee Seung <span class = "cursive">Oh</span></h1>  
       <p class="desc">My name is Jee Seung and I'm majoring in CSE and technically also design but I am in the process of designing my own major. .</p>
       <ul>
         <li>My favorite food is probably sushi but v inconsistent</li>
@@ -142,5 +162,12 @@ _       ▂▓█▓ ▐       ▕▒ǁ▐██████  ░░      █▓
     </div>
 
   </div>
+  <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
 </body>
 </html>
