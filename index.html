@@ -54,6 +54,14 @@
 
 
     }
+     #rightest-column {
+
+      background-color: #fff0fc; /* Slightly different pink for contrast */
+      padding: 20px; /* Padding inside the left column */
+      border-radius: 10px; /* Rounded corners */
+
+
+    }
 
 
 
@@ -94,9 +102,7 @@
 
 
   <!-- this is where my code is-->
-  <!-- Button to toggle dark mode -->
-<button id="dark-mode-toggle">Toggle Dark Mode</button>
-
+ 
   <div id="grid">
     <div id="left-column" class="scroll">  
 
@@ -161,7 +167,18 @@ _       ▂▓█▓ ▐       ▕▒ǁ▐██████  ░░      █▓
 
     </div>
 
-  </div>
+     <div id="rightest-column" class="scroll">  
+
+     
+      <h1>Other Options</span></h1>  
+      <p class="desc"> I will be adding features to this column.</p>
+       <!-- Button to toggle dark mode -->
+  <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+
+    </div> <!-- rightest close--> 
+
+  </div>  <!-- grid close--> 
   <script>
   const toggleButton = document.getElementById('dark-mode-toggle');
   toggleButton.addEventListener('click', () => {
