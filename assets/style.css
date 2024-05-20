@@ -1,69 +1,87 @@
-* {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
-}
-
-/* adjusting fonts
-body {
-    color: red;
-    Font-family: arial;
-}  */
-
-body {
-	font-family: helvetica;
-	color: #333;
-	transition: background 500ms ease;
-
-}
-
-p, li {
-	font-size:  22px;
-	line-height: 30px;
-}
-
-/* adjusting spacing */
-
-#left-column {
-	padding: 20px;
-}
-
-h1, p {
-	margin-bottom:  20px;
-}
-
-ul, ol {
-	margin-left: 20px;
-}
-
-img {
-	max-width: 100%;
-	height:  auto;
-}
-
-.cursive {
-    font-family: cursive;
-}
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-	overflow: hidden;
+    background-color: #f2c2e9; 
 }
 
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
+#grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr; /* Adjust grid layout if needed */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+    align-items: start; /* Align items at the start to allow independent height */
 }
 
-#left-column {
+#left-column, #rightest-column {
+    background-color: #fff0fc; /* Slightly different pink for contrast */
+    padding: 25px; /* Padding inside the left column */
+    border-radius: 10px; /* Rounded corners */
 }
 
 #right-column {
-	background: #333;
-}*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+    gap: 10px; /* Space between grid items */
+}
+
+.item {
+    background-color: #fff0fc; /* Slightly different pink for contrast */
+    padding: 20px; /* Padding inside the items */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Set a uniform height */
+}
+
+/* Dark mode specific styles */
+.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.dark-mode #left-column,
+.dark-mode #rightest-column {
+    background-color: #1e1e1e; /* Darker contrast for columns */
+}
+
+
+.dark-mode #right-column{
+    /*background-color: #1e1e1e; /* Darker contrast for columns */
+}
+
+.dark-mode .item {
+    background-color: #1e1e1e; 
+    color: #ffffff; /* Ensure text color is light */
+}
+
+.dark-mode a {
+    color: #9adc6d; /* Greenish links for better visibility in dark mode */
+}
+
+.dark-mode a:hover {
+    color: #c6e377; /* Lighter green on hover */
+}
+
+.toggle-button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    font-family: Georgia, sans-serif;
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.toggle-button:hover {
+    background-color: #f2f2f2; /* Lighter background on hover */
+}
+
+.cursive {
+    font-family: cursive; /* Apply a cursive font */
+}

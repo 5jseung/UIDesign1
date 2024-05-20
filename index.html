@@ -2,209 +2,65 @@
 <html>
 
 <head>
-  <title>Jee Seung Oh | UI Design Programming 1</title>
-  <meta charset="utf-8" />
- <head>
-<link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Jee Seung Oh | UI Design Programming 1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-  <style>
-     /* Dark mode specific styles */
-    .dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
-    }
-    .dark-mode #left-column,
-    .dark-mode #right-column, 
-    .dark-mode #rightest-column {
-    background-color: #1e1e1e; /* Darker contrast for columns */
-    }
-    .dark-mode a {
-    color: #9adc6d; /* Greenish links for better visibility in dark mode */
-    }
-    .dark-mode a:hover {
-    color: #c6e377; /* Lighter green on hover */
-    }
-
-    body {
-      background-color: #f2c2e9; 
-      /* Light pink background */
-     /* font-family: Arial, sans-serif; /* Change the font */
-     /* color: #333; /* Darker text for better readability */
-
-    }
-
-    #grid {
-      display: grid;
-      grid-template-columns: 2fr 3fr 1fr; /* Adjust grid layout if needed */
-      gap: 20px; /* Space between grid items */
-      padding: 20px; /* Padding around the grid */
-    }
-
-    #left-column {
-      background-color: #fff0fc; /* Slightly different pink for contrast */
-      padding: 25px; /* Padding inside the left column */
-      border-radius: 10px; /* Rounded corners */
-     
-    }
-
-    #right-column {
-
-      background-color: #fff0fc; /* Slightly different pink for contrast */
-      padding: 20px; /* Padding inside the left column */
-      border-radius: 10px; /* Rounded corners */
-
-
-    }
-     #rightest-column {
-
-      background-color: #fff0fc; /* Slightly different pink for contrast */
-      padding: 20px; /* Padding inside the left column */
-      border-radius: 10px; /* Rounded corners */
-
-
-    }
-
-
-
-    h1 {
-      color: #f2c2e9; /* Darker pink for headings */
-    }
-
-    a {
-      color: #d94f70; /* Pink color for links */
-    }
-
-    a:hover {
-      text-decoration: none; /* Remove underline on hover */
-      color: #bf3f5f; /* Darker pink on hover */
-    }
-
-    .desc {
-      font-style: italic; /* Italicize the description */
-    }
-
-    ul {
-      list-style-type: none; /* Remove default list bullets */
-      padding: 0;
-    }
-
-    ul li::before {
-      content: "•"; /* Custom bullet */
-      color: #d94f70; /* Bullet color */
-      display: inline-block; 
-      width: 3em; /* Space before bullet */
-      margin-left: -1em; /* Align bullet outside the text */
-    }
-  </style>
-</head>
-
 
 <body>
 
+    <div id="grid">
+        <div id="left-column" class="scroll">
+            <!-- about me-->
+            <h1>Jee Seung Oh <span class="cursive"></span></h1>
+            <p class="desc">My name is Jee Seung and I'm majoring in CSE and technically also design but I am in the process of designing my own major.</p>
+            <ul>
+                <li>My favorite food is probably sushi but v inconsistent</li>
+                <li>I am unable to decide on a favorite song</li>
+                <li>My favorite website is <a href="https://www.nytimes.com/crosswords">NYTGames !!</a> [Update] while researching nice website designs for P1, I found a few websites that I really like. For example <a href="https://www.monographcomms.ca/">Monograph</a> has really cool scroll / gradient</li>
+            </ul>
+        </div>
 
-  <!-- this is where my code is-->
- 
-  <div id="grid">
-    <div id="left-column" class="scroll">  
+        <div id="right-column" class="scroll">
+            <h1>Testing out HTML</h1>
+            <p class="desc">Class projects and assignments</p>
+            <div class="item">
+                <a href="asci_town/exterior-jeeseungoh.html">Jee Seung's ASCII home exterior</a>
+            </div>
+            <div class="item">
+                <a href="asci_town/interior-jeeseungoh.html">Jee Seung's ASCII home interior ..</a>
+            </div>
+            <div class="item">
+                <a href="Emoji/index.html">
+                    <img src="Emoji/imgs/i5.png" alt="I made a soju emoji!" style="width: 100%; height: auto;" />
+                    <br />
+                    soju emoji!
+                </a>
+            </div>
+            <div class="item">
+                <a href="codingfromlife/index.html">CSS Still Life</a>
+            </div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div> <!-- right-column close-->
 
-      <!-- about me-->
-      <h1>Jee Seung <span class = "cursive">Oh</span></h1>  
-      <p class="desc">My name is Jee Seung and I'm majoring in CSE and technically also design but I am in the process of designing my own major. .</p>
-      <ul>
-        <li>My favorite food is probably sushi but v inconsistent </li>
-        <li>I am unable to decide on a favorite song</li>
-        <li>My favorite website is <a href="https://www.nytimes.com/crosswords">NYTGames !! </a>  [Update] while researching nice website designs for P1, I found a few websites that I really like. For example <a href="https://www.monographcomms.ca/">Monograph </a> has really cool scroll / gradient</li>
-      </ul>
+        <div id="rightest-column" class="scroll">
+            <h1>Other Options</h1>
+            <p class="desc">Will be adding features to this column.</p>
+            <!-- Button to toggle dark mode -->
+            <button id="dark-mode-toggle" class="toggle-button">Dark / Light Mode</button>
+        </div> <!-- rightest-column close-->
+    </div> <!-- grid close-->
 
-    </div>
-
-    <div id="right-column" class="scroll">  
-
-      <h1> Testing out HTML</h1>
-      <p class="desc"> Not sure how to use html or figma  just testing* :( </p>
-      <ul>
-        <li><a href="asci_town/exterior-jeeseungoh.html"> Jee Seung's ASCII home exterior </a></li>
-      </ul>
-
-      <ul>
-        <li><a href="asci_town/interior-jeeseungoh.html"> Jee Seung's ASCII home    interior .. </a></li>
-      </ul>
-
-     
-      <ul>
-       
-        <li>
-    <a href="Emoji/index.html">
-        <img src="Emoji/imgs/i5.png" alt="I made a soju emoji!" style="width: 20%; height: auto;" />
-        <br />
-        I made a soju emoji
-    </a>
-</li>
-
-      </ul>
-
-
-
-      <ul>
-        <li><a href="codingfromlife/index.html"> CSS Still Life </a></li>
-      </ul>
-
-      <body>
-        <pre>
-
-             ▁▁▁▁▁▁▁▁▁  ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂jeeseungs room interior                                   
-           ─¯▐          ▐██████▬▬▬▬▬▬▬▬▬▬█▓█▓▓█▓████    ░░░░░░                          
-         ─¯  ▐ ▆ ▆ ▆    ▐██████          █▓█▓▓█▓████    ░░░░░░                        
-       ─¯    ▐  ▆ ▆ ▆   ▐██████          █▓█▓▓█▓████    ░░▒░▒▒                          
-    _─¯      ▐ ▆ ▒ ▆    ▐██████          █▓█▓▓█▓████    ░▒▒▒▒▒   ┌  ▀▀  ┐               
-  _─       ▅ ▐ ▆▒ ▒  ░░░▐██████ ░        █▓█▓▓█▓████             ▕ ████ ▏               
-__        ▅▓ ▐  ▇    ∩∩∩▐██████ ░░       █▓█▓▓█▓████             ▕ ████ ▏               
-_       ▂▓█▓ ▐       ▕▒ǁ▐██████  ░░      █▓█▓▓█▓████           ░░└  ▬▬  ┘░░             
-      ▂▓▓██▓ ▐       ▕▒ ▐██████   ░░     █▓█▓▓█▓████           ▒▒▒▒▒▒█▓▓▒▒▒             
-   ▕▓▓▓▓██ ▓ ▐       ▕▒ ▐██████     ░    █▓█▓▓█▓████           ▒▒▒▒▒██▓▓▓▒▒             
-   ▕▓▓██    ░░░░░░░░░░░░░░░░░░█▁▁▁▁▁▁▁▁▁▁█▓█▓▓█▓████▁▁▁▁▁▁▁▁▁▁▁▒▁▁▁ ██▓▓▓▁▒▁▁▁▁▁▁▁      
-    ▓██     ░░░░░░░░░░░░░░░░░▒█          █▓█▓▓█▓████           ▒    ██▓▓▓ ▒             
-    ▓███  ░░░░░░░░░░░░░░░░░░▒▒█                                ▒ ███▓▓▓▓▓ ▒             
-    ▓█░░░░░░░░░░░░░░░░░░░░░▒▒▒                                  ▒  ░ ▒ ░▏              
-    ▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒                                  ▒  ░ ▒ ░▏              
-    ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓                                                       
-    ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒             ▀▀▀▀▀▀                                     
-    ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒            ▀▀░░▀░▀░▀░▀                                   
-    ▓▓                   ░▓          ▀▀░rugrugrug░░▀▀                                
- ░░░░░    ░░░░░░░░░░░░░░░         ▀░░░▀rugrugrug░▀░░▀                        ▒         
-░░░░░░░░░░░░░░░░░                 ▀░░░░░r░▀░░░rug▀▀        ▒  ░            ▒         
-░░░░░░░░░░░░░░                      rug░rug░▀▀▀           ░░░░░           ▒          
-░░░░░░░░░░░                          ▀▀▀▀▀▀▀              ░σ░σ░░        ░▒       
-░░░░░░                                                    ░░^░░░░░░░░░░▒            
-                                                        ░░░▒ ░░░░░░░░▒              
-                                                        ▒▒    ▒▒▒▒▒░▒▒              
-                                                            ▒▒▒  ▒▒▒▒▒              
-                                                             ▒▒ ▒▒                  
-                                                                               
-        </pre>
-
-      </body>
-
-    </div>
-
-     <div id="rightest-column" class="scroll">  
-
-     
-      <h1>Other Options</span></h1>  
-      <p class="desc"> will be adding features to this column.</p>
-       <!-- Button to toggle dark mode -->
-  <button id="dark-mode-toggle"> Dark / Light Mode</button>
-
-
-    </div> <!-- rightest close--> 
-
-  </div>  <!-- grid close--> 
-  <script>
-  const toggleButton = document.getElementById('dark-mode-toggle');
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 
 </body>
+
 </html>
